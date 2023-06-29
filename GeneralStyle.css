@@ -1,0 +1,40 @@
+/* Custom Font import */
+@font-face {
+    font-family: HankenGrotesk;
+    src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+/* custom color variables*/
+:root {
+    /* Primary colors */
+    --CLight-red: hsl(0, 100%, 67%);
+    --COrangey-yellow: hsl(39, 100%, 56%);
+    --CGreen-teal: hsl(166, 100%, 37%);
+    --CCobalt-blue: hsl(234, 85%, 45%);
+
+    /* Neutral colors */
+    --CWhite: hsl(0, 0%, 100%);
+    --CPale-blue: hsl(221, 100%, 96%);
+    --CLight-lavender: hsl(241, 100%, 89%);
+    --CDark-gray-blue: hsl(224, 30%, 27%);
+
+    /* Gradients */
+    --Background-gradient-colors: hsl(252, 100%, 67%), hsl(241, 81%, 54%);
+    --Circle-gradient-colors: hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0);
+}
+/* browser style reset */
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
