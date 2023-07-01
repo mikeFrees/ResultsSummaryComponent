@@ -10,24 +10,71 @@ body {
     background-color: var(--CPale-blue);
 }
 
-section{
+section {
     display: flex;
     min-width: 200px;
     min-height: 200px;
     background-color: var(--CWhite);
-    border-radius: 10%;
+    border-radius: 20px;
     width: 52%;
     height: 48%;
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     width: 50%;
     height: 100%;
-    border-radius: 10%;
+    border-radius: 20px;
     background: linear-gradient(var(--Background-gradient-colors));
+    color: var(--CWhite);
 }
 
 aside {
     height: 100%;
     width: 50%;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    background: linear-gradient(var(--Circle-gradient-colors));
+}
+
+main h1 {
+    color: hsla(241, 100%, 89%,0.9);
+    font-weight: 500;
+}
+
+div p:first-child {
+    color: var(--CWhite);
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+div p:last-child {
+    color: hsla(241, 100%, 89%,0.6);
+    font-size: 0.8rem;
+    
+}
+
+main p span{
+    color: var(--CWhite);
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+main p {
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: var(--CLight-lavender);
+    width: 66%;
 }
