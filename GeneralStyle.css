@@ -31,6 +31,13 @@
     box-sizing: border-box;
 }
 
+input, h1, h2, p {
+    text-align: center;
+    font-family: HankenGrotesk;
+    font-size: 18px;
+    font-weight: 500;
+}
+
 .attribution { 
     font-size: 11px; text-align: center; 
 }
