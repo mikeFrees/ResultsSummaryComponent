@@ -31,7 +31,7 @@
     box-sizing: border-box;
 }
 
-input, h1, h2, p {
+input, h1, h2, p, th, td, caption {
     text-align: center;
     font-family: HankenGrotesk;
     font-size: 18px;
