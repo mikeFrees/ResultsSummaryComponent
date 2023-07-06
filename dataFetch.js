@@ -1,11 +1,5 @@
 import data from './data.json' assert { type: 'json' };
-let category, score, icon, table;
-const tableRow =
-`<tr>
-    <td><img src=${icon} alt="Reaction logo"></td>
-    <th id="Red">${category}</th>
-    <td><span>${score}</span> / 100</td>
-</tr>`;
+let table = "";
 
 const tableStart = 
 `<table>
@@ -18,6 +12,15 @@ const tableEnd=
 table += tableStart;
 
 // enter itteration trough json object here
+data.forEach((data) => {
+    const tableRow =
+        `<tr>
+            <td><img src=${data.icon} alt="Reaction logo"></td>
+            <th style= "color:data.icon.stroke;">${data.category}</th>
+            <td><span>${data.score}</span> / 100</td>
+        </tr>`;
+    table += tableRow;
+});
 
 table += tableEnd;
 document.getElementById("DataInsert").innerHTML += table;

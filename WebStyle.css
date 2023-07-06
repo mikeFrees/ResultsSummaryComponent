@@ -97,22 +97,6 @@ input:active{
     background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0.8));
 }
 
-#Blue {
-    color: var(--CCobalt-blue);
-}
-
-#Green {
-    color: var(--CGreen-teal);
-}
-
-#Yellow {
-    color: var(--COrangey-yellow);
-}
-
-#Red {
-    color: var(--CLight-red);
-}
-
 td {
     color: hsla(224, 30%, 27%, 0.5);
     font-weight: 700;
