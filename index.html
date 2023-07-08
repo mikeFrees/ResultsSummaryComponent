@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    
+    <title>Frontend Mentor | Results summary component</title>
 
-  <link rel="stylesheet" href="GeneralStyle.css" type="text/css">
-  <link rel="stylesheet" href="WebStyle.css" type="text/css">
-  <link rel="stylesheet" href="MobileStyle.css" type="text/css" media="screen and hover:none">
-</head>
-<body>
-  <section>
-    <main>
-      <h1>Your Result</h1>
-      <div class="result">
-        <p>76</p>
-        <p>of 100</p>
-      </div>
-      <div><p class="Great">Great</p></div>
-      <p>You scored higher than 65% of the people who have taken these tests.</p>
-    </main>
-    <aside id="DataInsert"> 
-    </aside>
-  </section>  
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. <br>
-    Coded by <a href="https://www.linkedin.com/in/mike-frees/" target="_blank">Frees Mike</a>.
-  </footer>
+    <link rel="stylesheet" href="GeneralStyle.css" type="text/css">
+    <link rel="stylesheet" href="WebStyle.css" type="text/css">
+    <link rel="stylesheet" href="MobileStyle.css" type="text/css" media="screen and hover:none">
+  </head>
 
-  <script type="text/javascript">
-    buttonPress = () => {window.open("finalPage.html", "_self");}
-  </script>
-  <script src="dataFetch.js" type="module"></script>
-</body>
+  <body>
+
+    <section>
+      <main>
+        <h1>Your Result</h1>
+        <div class="result">
+          <p>76</p>
+          <p>of 100</p>
+        </div>
+        <div><p class="Great">Great</p></div>
+        <p>You scored higher than 65% of the people who have taken these tests.</p>
+      </main>
+
+      <aside id="DataInsert"> 
+        <!--Table with results will be loaded from a JSON file created with JS-->
+      </aside>
+    </section>  
+
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. <br>
+      Coded by <a href="https://www.linkedin.com/in/mike-frees/" target="_blank">Frees Mike</a>.
+    </footer>
+
+    <script type="text/javascript">
+      buttonPress = () => {window.open("finalPage.html", "_self");}
+    </script>
+    <script src="dataFetch.js" type="module"></script>
+  </body>
 </html>

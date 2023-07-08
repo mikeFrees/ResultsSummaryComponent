@@ -14,9 +14,9 @@ table += tableStart;
 // enter itteration trough json object here
 data.forEach((data) => {
     const tableRow =
-        `<tr>
+        `<tr class= ${data.color}>
             <td><img src=${data.icon} alt="Reaction logo"></td>
-            <th style= "color:data.icon.stroke;">${data.category}</th>
+            <th class= ${data.color}">${data.category}</th>
             <td><span>${data.score}</span> / 100</td>
         </tr>`;
     table += tableRow;
