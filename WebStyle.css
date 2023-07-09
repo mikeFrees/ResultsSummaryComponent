@@ -12,15 +12,17 @@ body {
 
 section {
     display: flex;
-    min-width: 200px;
+    min-width: 360px;
     min-height: 200px;
     background-color: var(--CWhite);
     border-radius: 20px;
     width: 52%;
     height: 48%;
+    min-height: 350px;
 }
 
 main {
+    min-width: 180px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,6 +32,7 @@ main {
     border-radius: 20px;
     background: linear-gradient(var(--Background-gradient-colors));
     color: var(--CWhite);
+    min-height: 350px;
 }
 
 aside {
@@ -39,10 +42,13 @@ aside {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    min-width: 180px;
+    min-height: 350px;
 }
 
 .result {
     display: flex;
+    min-width: 85px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -74,6 +80,7 @@ main div p.Great{
     color: var(--CWhite);
     font-weight: 500;
     font-size: 1.5rem;
+    margin-bottom: -30px;
 }
 
 main p {
@@ -91,6 +98,7 @@ input {
     font-weight: 400;
     font-size: 0.8rem;
     padding: 10px;
+    margin-bottom: 5%;
 }
 
 input:hover{
@@ -104,6 +112,7 @@ input:active{
 td {
     color: hsla(224, 30%, 27%, 0.5);
     font-weight: 700;
+    display: flex;
 }
 
 th {
@@ -117,6 +126,7 @@ td span {
 caption {
     font-weight: 700;
     font-size: 1.2rem;
+    line-height: 3;
     color: var(--CDark-gray-blue);
     align-self: self-start;
 }
@@ -127,6 +137,7 @@ table {
     border-spacing: 0;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 tr {
@@ -170,4 +181,7 @@ tr.Green {
 
 tbody {
     display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-around;
 }
